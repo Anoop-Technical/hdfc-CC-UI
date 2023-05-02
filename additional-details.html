@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC Card Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/card-features.css">
+    <link rel="stylesheet" href="./css/additional-details.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <img class="img-fluid hdfc_logo" src="./images/hdfcLogo.svg" alt="hdfc-logo" />
+                    <img class="img-fluid wishfin_logo" src="./images/wishfin_logo.svg" alt="wishfin-logo" />
+                </div>
+                <p class="text-center top_heading">
+                    Enter your few details to get your <span class="d-block">Regalia Credit Card</span>
+                </p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="parent_card">
+                <form action="" id="regaliaForm">
+                    <div class="row">
+                        <h5 class="ca_heading">Current Address</h5>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="currentAddress1">Current Address Line1</label>
+                                <input name="currentAddress1" type="text" id="currentAddress1" maxlength="50" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="currentAddress2">Current Address Line2</label>
+                                <input name="currentAddress2" type="text" id="currentAddress2" maxlength="50" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="currentPincode">Current Pincode</label>
+                                <input name="currentPincode" type="tel" id="currentPincode" maxlength="6" minlength="6" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="currentCity">Current City</label>
+                                <select name="currentCity" id="currentCity" class="form-control required" aria-required="true">
+                                    <option value="">Please Select</option>
+                                    <option value="noida">Noida</option>
+                                    <option value="kanpur">Kanpur</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="residenceType">Residence Type</label>
+                                <select name="residenceType" id="residenceType" class="form-control required" aria-required="true">
+                                    <option value="">Please Select</option>
+                                    <option value="noida">Rented</option>
+                                    <option value="kanpur">Own</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="addresssameAs">Permanent address same as current address</label>
+                                <div class="radio-btns">
+                                    <label class="radio-option">
+                                        <input type="radio" name="addresssameAs" id="addresssameAs" class="required" value="1" aria-required="true">
+                                        <i></i>
+                                        <span>Yes</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="addresssameAs" class="required" value="0" aria-required="true">
+                                        <i></i>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row officeAddress">
+                        <h5>Office Address</h5>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="officeAddress1">Office Address Line1</label>
+                                <input name="officeAddress1" type="text" id="officeAddress1" maxlength="50" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="officeAddress2">Office Address Line2</label>
+                                <input name="officeAddress2" type="text" id="officeAddress2" maxlength="50" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="officePincode">Office Pincode</label>
+                                <input name="officePincode" type="tel" id="officePincode" maxlength="6" minlength="6" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="officeCity">Office City</label>
+                                <select name="officeCity" id="officeCity" class="form-control required" aria-required="true">
+                                    <option value="">Please Select</option>
+                                    <option value="noida">Noida</option>
+                                    <option value="kanpur">Kanpur</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="officeemailId">Office Email ID</label>
+                                <input name="officeemailId" type="text" id="officeemailId" maxlength="50" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="landlineNumber">Office Landline Number</label>
+                                <input name="landlineNumber" type="tel" id="landlineNumber" maxlength="10" class="form-control required" value="" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row additionalDetail">
+                        <h5>Additional Details</h5>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="designation">Designation</label>
+                                <select name="designation" id="designation" class="form-control required" aria-required="true">
+                                    <option value="">Please Select</option>
+                                    <option value="uideveloper">UI Developer</option>
+                                    <option value="softwareengineer">Software Engineer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="education">Education</label>
+                                <select name="education" id="education" class="form-control required" aria-required="true">
+                                    <option value="">Please Select</option>
+                                    <option value="btech">B.Tech</option>
+                                    <option value="mtech">M.Tech</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="nameonCard">Name on Card</label>
+                                <input name="nameonCard" type="text" id="nameonCard" class="form-control required" maxlength="50" value="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="preferredAddress">Preferred Address for Communication</label>
+                                <div class="radio-btns">
+                                    <label class="radio-option">
+                                        <input type="radio" name="preferredAddress" id="preferredAddress" class="required" value="1" aria-required="true">
+                                        <i></i>
+                                        <span>Office</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="preferredAddress" class="required" value="0" aria-required="true">
+                                        <i></i>
+                                        <span>Current Address</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            <button type="submit" class="addsubmit_btn">Submit<img class="img-fluid btnArrow" src="./images/btnArrow.png" alt=""></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/autoNumeric.js"></script>
+    <script src="./js/additional-details.js"></script>
+</body>
+</html>

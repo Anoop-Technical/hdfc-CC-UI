@@ -1,0 +1,37 @@
+.top_heading span{
+  font-size: 31px;
+  line-height: 32px;
+}
+.addsubmit_btn img {
+  margin: 0 0 2px 4px;
+}
+.ca_heading,
+.officeAddress h5,
+.additionalDetail h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.0048em;
+  color: #1e2a3b;
+}
+.ca_heading{
+    margin-bottom: 30px;
+}
+.officeAddress h5,
+.additionalDetail h5{
+    margin: 15px 0 30px;
+}
+.radio-btns .radio-option:first-child {
+  margin-right: 35px;
+}
+.radio-btns .radio-option:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 576px){
+    .parent_card {
+        padding: 30px 10px;
+    }
+    .top_heading span {
+      font-size: 28px;
+  }
+}

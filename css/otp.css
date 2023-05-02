@@ -1,0 +1,85 @@
+header {
+  background: #365ec7;
+  padding-bottom: 100px;
+}
+.parent_card {
+  margin-top: -60px;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 100%;
+  padding: 70px 30px;
+  margin-bottom: 50px;
+}
+/* OTP Modal */
+.otp_wrapper h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.0124em;
+  color: #1e2a3b;
+  margin-bottom: 10px;
+}
+.otp_wrapper p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.digit-group .digit {
+  width: 56.92px;
+  height: 54px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 9px;
+}
+.digit-group .digit:hover,
+.digit-group .digit:focus,
+.digit-group .digit:active,
+.digit-group .digit:focus-visible,
+.digit-group .digit:focus-within {
+  outline: #ae285d;
+  box-shadow: none;
+}
+.__mr_20 {
+  margin-right: 15px;
+}
+.__theme_color {
+  color: #1170c7;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.form-group .help-block.otp_error_box {
+  display: none;
+}
+.form-group.has-error .help-block.otp_error_box {
+  font-size: 11px;
+  line-height: 11px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  color: red;
+  display: block;
+}
+/* End OTP */
+@media screen and (max-width: 575.98px) {
+  .parent_card {
+    padding: 50px 10px;
+    margin-bottom: 50px;
+  }
+  .otp_wrapper h2 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .digit-group .digit {
+    width: 45px;
+    height: 50px;
+  }
+  .otp_wrapper p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

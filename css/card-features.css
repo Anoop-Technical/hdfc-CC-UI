@@ -1,0 +1,105 @@
+header {
+  background: #365ec7;
+}
+.top_heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  padding: 30px 0 100px;
+}
+.parent_card {
+  margin-top: -60px;
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 100%;
+  padding: 50px 30px;
+  margin-bottom: 50px;
+}
+.card {
+  background: #f6f8fc;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  height: 100%;
+  position: relative;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+.card-header img {
+  margin-right: 15px;
+}
+.card-header .heading {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0f1a2a;
+}
+.card-content {
+  padding: 15px;
+}
+.fee,
+.benifits p,
+.benifits ul li {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.0048em;
+}
+.benifits ul li {
+  font-size: 13px;
+}
+.fee,
+.benifits p {
+  color: #365ec7;
+}
+.benifits {
+  margin: 25px 0 100px;
+}
+.tax {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0f1a2a;
+}
+.benifits ul {
+  padding-left: 22px;
+}
+.benifits ul li span {
+  font-weight: 600;
+}
+.submit_btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.submit_btn img {
+  margin: 0 0 2px 8px;
+}
+.cardtnc {
+  text-align: right;
+}
+.cardtnc span {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.0032em;
+  color: #1e2a3b;
+}
+@media screen and (max-width: 576px) {
+  .parent_card {
+    padding: 35px 10px;
+  }
+  .top_heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .top_heading {
+    padding: 0px 0 90px;
+  }
+}
